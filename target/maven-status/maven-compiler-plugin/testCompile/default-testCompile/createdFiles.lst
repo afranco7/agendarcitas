@@ -1,4 +1,4 @@
-model\PatientPage.class
+model\BasePage.class
 RunnerTest.class
 steps\AgendarCitas.class
-model\DoctorPage.class
+model\AgendarPages.class

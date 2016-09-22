@@ -13,9 +13,7 @@ import java.util.List;
 /**
  * Created by afranco7 on 21/09/2016.
  */
-public class DoctorPage {
-
-    public WebDriver driver;
+public class AgendarPages extends BasePage{
 
     private static final By LIST_MENU_OPTIONS = By.cssSelector(".list-group-item");
     private static final By NAME_DOCTOR = By.cssSelector("input#name.form-control");
@@ -25,7 +23,11 @@ public class DoctorPage {
     private static final By IDENTIFICATION_DOCTOR = By.cssSelector("input#identification.form-control");
     private static final By GUARDAR_BUTTON = By.cssSelector("a.btn.btn-primary.pull-right");
     private static final By SUCCESS_SAVED = By.cssSelector("div.panel-body");
+    private static final By LIST_ALL_INPUTS_PATIENT = By.cssSelector("input.form-control");
+    private static final By IDENTIFICATION_TYPE_PATIENT = By.cssSelector("select.form-control");
+    private static final By DATE_INPUT_FIELD = By.cssSelector("input#datepicker.form-control.hasDatepicker");
     private static int CEDULA=0;
+
 
     public void goToMainPage(String url){
         driver = new FirefoxDriver();
@@ -40,6 +42,8 @@ public class DoctorPage {
             menuOptions.get(0).click();
         } else if(doctorPatient.trim().equalsIgnoreCase("Paciente")) {
             menuOptions.get(1).click();
+        } else if(doctorPatient.trim().equalsIgnoreCase("Cita")) {
+            menuOptions.get(5).click();
         } else {
             throw new WebDriverException("Invalid parameter " + doctorPatient );
         }
@@ -50,11 +54,11 @@ public class DoctorPage {
             Assert.assertEquals("No es la pagina correcta",driver.getCurrentUrl(),"http://automatizacion.herokuapp.com/afranco/addDoctor");
         } else if(doctorPatient.trim().equalsIgnoreCase("patient")) {
             Assert.assertEquals("No es la pagina correcta",driver.getCurrentUrl(),"http://automatizacion.herokuapp.com/afranco/addPatient");
+        } else if(doctorPatient.trim().equalsIgnoreCase("Cita")) {
+            Assert.assertEquals("No es la pagina correcta",driver.getCurrentUrl(),"http://automatizacion.herokuapp.com/afranco/appointmentScheduling");
         } else {
             throw new WebDriverException("Invalid parameter " + doctorPatient );
         }
-
-
     }
 
     public void fillTheAddADoctorForm(){
@@ -71,7 +75,7 @@ public class DoctorPage {
         driver.findElement(GUARDAR_BUTTON).click();
     }
 
-    public void verifyThatDoctorIsAdded(){
+    public void verifyThatDoctorPatientIsAdded(){
         boolean goodMessage=false;
         String alreadySavedMessage="No se pudo guardar debido a:\n" +
                 "*El campo 'Documento de identidad' ya esta registrado.";
@@ -88,6 +92,21 @@ public class DoctorPage {
             throw new WebDriverException("Ocurrio un error con el doctor a guardar" + currentMessage );
         }
         driver.close();
+    }
+
+    public void fillAddAPatientForm(){
+
+        List<WebElement> listAllInputs = driver.findElements(LIST_ALL_INPUTS_PATIENT);
+        listAllInputs.get(0).sendKeys("Alejandro");
+        listAllInputs.get(1).sendKeys("Franco Barrios");
+        listAllInputs.get(2).sendKeys("3006875453");
+        Select select = new Select(driver.findElement(IDENTIFICATION_TYPE_PATIENT));
+        select.selectByIndex(CEDULA);
+        listAllInputs.get(3).sendKeys("1047373924");
+    }
+
+    private void addaDate(String month,String day,String year){
+        driver.findElement(DATE_INPUT_FIELD).sendKeys(month+"/"+day+"/"+year);
     }
 
 }

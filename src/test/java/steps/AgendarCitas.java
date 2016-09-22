@@ -1,6 +1,6 @@
 package steps;
 
-import model.DoctorPage;
+import model.AgendarPages;
 import org.jbehave.core.annotations.*;
 import org.jbehave.core.steps.Steps;
 
@@ -10,37 +10,46 @@ import org.jbehave.core.steps.Steps;
  */
 
 public class AgendarCitas extends Steps{
-    private DoctorPage doctorPage=new DoctorPage();
-
+    private AgendarPages agendarPages =new AgendarPages();
 
     @Given("I am at the main page of the system")
     public void goToMainPage(){
-        doctorPage.goToMainPage("http://automatizacion.herokuapp.com/afranco/");
+        agendarPages.goToMainPage("http://automatizacion.herokuapp.com/afranco/");
     }
+
 
     @When("I select the Agregar $DoctorPatient Option")
     public void selectAgregarDoctor(@Named("DoctorPatient") String doctor){
-        doctorPage.selectAgregarDoctorPatient(doctor);
+        agendarPages.selectAgregarDoctorPatient(doctor);
+    }
+
+    @When("I select the Agendar $Cita Option")
+    public void selectAgendarCita(@Named("Cita") String cita){
+        agendarPages.selectAgregarDoctorPatient(cita);
     }
 
     @Then("I validate that i am in the add $doctorPatient page")
     public void verifyTheCorrectPage(@Named("doctorPatient") String doctorPatient){
-        doctorPage.verifyTheCorrectPage(doctorPatient);
+        agendarPages.verifyTheCorrectPage(doctorPatient);
     }
 
     @When("I fill all the inputs of the form")
     public void fillTheAddADoctorForm(){
-        doctorPage.fillTheAddADoctorForm();
+        agendarPages.fillTheAddADoctorForm();
     }
 
     @When("I click on Guardar button")
     public void clickOnGuardar(){
-        doctorPage.clickOnGuardar();
+        agendarPages.clickOnGuardar();
     }
 
-    @Then("I validate that the doctor is correctly added")
-    public void verifyThatDoctorIsAdded(){
-        doctorPage.verifyThatDoctorIsAdded();
+    @Then("I validate that the $doctorPatient is correctly added")
+    public void verifyThatDoctorPatientIsAdded(){
+        agendarPages.verifyThatDoctorPatientIsAdded();
     }
 
+    @When("I fill all the inputs of the patient form")
+    public void fillAddAPatientForm(){
+        agendarPages.fillAddAPatientForm();
+    }
 }

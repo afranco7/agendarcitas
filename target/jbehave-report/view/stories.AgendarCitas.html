@@ -32,18 +32,21 @@
 <div class="step successful">Given I am at the main page of the system</div>
 <div class="step successful">When I select the Agregar <span class="step parameter">Paciente</span> Option</div>
 <div class="step successful">Then I validate that i am in the add <span class="step parameter">patient</span> page</div>
-<div class="step pending">When I fill all the inputs of the patient form <span class="keyword pending">(PENDING)</span></div>
+<div class="step successful">When I fill all the inputs of the patient form</div>
+<div class="step successful">When I click on Guardar button</div>
+<div class="step successful">Then I validate that the patient is correctly added</div>
+</div>
+<div class="scenario">
+<h2>Scenario: creating a new appointment</h2>
+<div class="step successful">Given I am at the main page of the system</div>
+<div class="step successful">When I select the Agendar <span class="step parameter">Cita</span> Option</div>
+<div class="step successful">Then I validate that i am in the add <span class="step parameter">Cita</span> page</div>
+<div class="step pending">When I fill all the inputs of the AgendarCitas form <span class="keyword pending">(PENDING)</span></div>
 <div class="step notPerformed">When I click on Guardar button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step pending">Then I validate that the patient is correctly added <span class="keyword pending">(PENDING)</span></div>
-<div><pre class="pending">@When(&quot;I fill all the inputs of the patient form&quot;)
+<div class="step notPerformed">Then I validate that the appointment is correctly added <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div><pre class="pending">@When(&quot;I fill all the inputs of the AgendarCitas form&quot;)
 @Pending
-public void whenIFillAllTheInputsOfThePatientForm() {
-  // PENDING
-}
-</pre></div>
-<div><pre class="pending">@Then(&quot;I validate that the patient is correctly added&quot;)
-@Pending
-public void thenIValidateThatThePatientIsCorrectlyAdded() {
+public void whenIFillAllTheInputsOfTheAgendarCitasForm() {
   // PENDING
 }
 </pre></div>
