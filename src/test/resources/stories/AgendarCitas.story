@@ -23,7 +23,7 @@ Given I am at the main page of the system
 When I select the Agregar Paciente Option
 Then I validate that i am in the add patient page
 When I fill all the inputs of the patient form
-When I click on Guardar button
+And I click on Guardar button
 Then I validate that the patient is correctly added
 
 Scenario: creating a new appointment
@@ -32,5 +32,5 @@ Given I am at the main page of the system
 When I select the Agendar Cita Option
 Then I validate that i am in the add Cita page
 When I fill all the inputs of the AgendarCitas form
-When I click on Guardar button
-Then I validate that the appointment is correctly added
+And I click on Guardar button
+Then I verify that the appointment is correctly added

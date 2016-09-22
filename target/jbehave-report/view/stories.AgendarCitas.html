@@ -33,7 +33,7 @@
 <div class="step successful">When I select the Agregar <span class="step parameter">Paciente</span> Option</div>
 <div class="step successful">Then I validate that i am in the add <span class="step parameter">patient</span> page</div>
 <div class="step successful">When I fill all the inputs of the patient form</div>
-<div class="step successful">When I click on Guardar button</div>
+<div class="step successful">And I click on Guardar button</div>
 <div class="step successful">Then I validate that the patient is correctly added</div>
 </div>
 <div class="scenario">
@@ -41,15 +41,9 @@
 <div class="step successful">Given I am at the main page of the system</div>
 <div class="step successful">When I select the Agendar <span class="step parameter">Cita</span> Option</div>
 <div class="step successful">Then I validate that i am in the add <span class="step parameter">Cita</span> page</div>
-<div class="step pending">When I fill all the inputs of the AgendarCitas form <span class="keyword pending">(PENDING)</span></div>
-<div class="step notPerformed">When I click on Guardar button <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">Then I validate that the appointment is correctly added <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div><pre class="pending">@When(&quot;I fill all the inputs of the AgendarCitas form&quot;)
-@Pending
-public void whenIFillAllTheInputsOfTheAgendarCitasForm() {
-  // PENDING
-}
-</pre></div>
+<div class="step successful">When I fill all the inputs of the AgendarCitas form</div>
+<div class="step successful">And I click on Guardar button</div>
+<div class="step successful">Then I verify that the appointment is correctly added</div>
 </div>
 </div>
 

@@ -52,4 +52,14 @@ public class AgendarCitas extends Steps{
     public void fillAddAPatientForm(){
         agendarPages.fillAddAPatientForm();
     }
+
+    @When("I fill all the inputs of the AgendarCitas form")
+    public void fillAgendarCitasForm(){
+        agendarPages.fillAgendarCitasForm();
+    }
+
+    @Then("I verify that the appointment is correctly added")
+    public void verifyAppointmentAdded(){
+        agendarPages.verifyAppointmentAdded();
+    }
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -26,6 +27,7 @@ public class AgendarPages extends BasePage{
     private static final By LIST_ALL_INPUTS_PATIENT = By.cssSelector("input.form-control");
     private static final By IDENTIFICATION_TYPE_PATIENT = By.cssSelector("select.form-control");
     private static final By DATE_INPUT_FIELD = By.cssSelector("input#datepicker.form-control.hasDatepicker");
+    private static final By OBSERVACIONES_INPUT = By.cssSelector("textarea.form-control");
     private static int CEDULA=0;
 
 
@@ -68,7 +70,7 @@ public class AgendarPages extends BasePage{
         driver.findElement(IDENTIFICATION_TYPE_DOCTOR);
         Select select = new Select(driver.findElement(IDENTIFICATION_TYPE_DOCTOR));
         select.selectByIndex(CEDULA);
-        driver.findElement(IDENTIFICATION_DOCTOR).sendKeys("999999999");
+        driver.findElement(IDENTIFICATION_DOCTOR).sendKeys("32939242");
     }
 
     public void clickOnGuardar(){
@@ -76,21 +78,22 @@ public class AgendarPages extends BasePage{
     }
 
     public void verifyThatDoctorPatientIsAdded(){
-        boolean goodMessage=false;
+        boolean goodMessage=true;
         String alreadySavedMessage="No se pudo guardar debido a:\n" +
                 "*El campo 'Documento de identidad' ya esta registrado.";
         String correctlySavedMessage="Datos guardados correctamente.";
         String currentMessage = driver.findElement(SUCCESS_SAVED).getText().trim();
 
-        if (!currentMessage.equalsIgnoreCase(alreadySavedMessage)){
-            goodMessage=true;
-        }else if(!currentMessage.equalsIgnoreCase(correctlySavedMessage)){
-            goodMessage=true;
+        if (currentMessage.equalsIgnoreCase(alreadySavedMessage)){
+            goodMessage=false;
+        }else if(currentMessage.equalsIgnoreCase(correctlySavedMessage)){
+            goodMessage=false;
         }
 
-        if (!goodMessage){
+        if (goodMessage){
             throw new WebDriverException("Ocurrio un error con el doctor a guardar" + currentMessage );
         }
+
         driver.close();
     }
 
@@ -105,8 +108,41 @@ public class AgendarPages extends BasePage{
         listAllInputs.get(3).sendKeys("1047373924");
     }
 
-    private void addaDate(String month,String day,String year){
-        driver.findElement(DATE_INPUT_FIELD).sendKeys(month+"/"+day+"/"+year);
+    private void addADate(int month,int day,int year){
+        Calendar calendar =Calendar.getInstance();
+        int mes= calendar.get(Calendar.MONTH)+1;
+        int dia= calendar.get(Calendar.DATE);
+        int ano= calendar.get(Calendar.YEAR);
+
+        System.out.println(mes+" "+dia+" "+ano);
+        if (mes<=month&&dia<=day&&ano<=year) {
+            driver.findElement(DATE_INPUT_FIELD).sendKeys(Integer.toString(month)+"/"+Integer.toString(day)+"/"+Integer.toString(year));
+        }else{
+            throw new WebDriverException("La fecha ingresada es invalida" );
+        }
+    }
+
+    public void fillAgendarCitasForm(){
+        addADate(10,25,2016);
+        List<WebElement> listAllInputs = driver.findElements(LIST_ALL_INPUTS_PATIENT);
+        listAllInputs.get(1).sendKeys("1047373924");
+        listAllInputs.get(2).sendKeys("32939242");
+        driver.findElement(OBSERVACIONES_INPUT).sendKeys("paciente con ganas de jugar futbol");
+    }
+
+    public void verifyAppointmentAdded(){
+        boolean goodMessage=true;
+        String correctlySavedMessage="Datos guardados correctamente.";
+        String currentMessage = driver.findElement(SUCCESS_SAVED).getText().trim();
+        if(currentMessage.equalsIgnoreCase(correctlySavedMessage)){
+            goodMessage=false;
+        }
+
+        if (goodMessage){
+            throw new WebDriverException("Ocurrio un error con el doctor a guardar" + currentMessage );
+        }
+
+        driver.close();
     }
 
 }
