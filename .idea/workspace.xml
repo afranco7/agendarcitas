@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24d0348a-56d9-4187-b64d-edead941e6e2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/model/BasePage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/agendar-citas-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/model/BasePage.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/model/AgendarPages.class" afterPath="$PROJECT_DIR$/target/test-classes/model/AgendarPages.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/model/AgendarPages.java" afterPath="$PROJECT_DIR$/src/test/java/model/AgendarPages.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java" afterPath="$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/AfterStories.stats" afterPath="$PROJECT_DIR$/target/jbehave-report/AfterStories.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/BeforeStories.stats" afterPath="$PROJECT_DIR$/target/jbehave-report/BeforeStories.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/stories.AgendarCitas.stats" afterPath="$PROJECT_DIR$/target/jbehave-report/stories.AgendarCitas.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/storyDurations.props" afterPath="$PROJECT_DIR$/target/jbehave-report/storyDurations.props" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/AfterStories.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/BeforeStories.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/reports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/stories.AgendarCitas.stats.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/stories.AgendarCitas.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/RunnerTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/RunnerTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunnerTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunnerTest.xml" />
     </list>
     <ignored path="agendarCitas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgendarPages.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AgendarPages.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/AgendarPages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
+            <state relative-caret-position="196">
+              <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgendarCitas.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AgendarCitas.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-253">
+            <state relative-caret-position="309">
               <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -759,19 +739,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/AgendarPages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
+        <state relative-caret-position="309">
           <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -783,6 +753,16 @@
             <element signature="e#1955#1956#0" expanded="true" />
             <element signature="e#2060#2061#0" expanded="true" />
             <element signature="e#2113#2114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/AgendarPages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="124" column="8" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

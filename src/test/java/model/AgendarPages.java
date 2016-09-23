@@ -122,7 +122,7 @@ public class AgendarPages {
         int dia= calendar.get(Calendar.DATE);
         int ano= calendar.get(Calendar.YEAR);
 
-        System.out.println(mes+" "+dia+" "+ano);
+        
         if (mes<=month&&dia<=day&&ano<=year) {
             driver.findElement(DATE_INPUT_FIELD).sendKeys(Integer.toString(month)+"/"+Integer.toString(day)+"/"+Integer.toString(year));
         }else{
