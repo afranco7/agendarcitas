@@ -4,6 +4,7 @@ import junit.framework.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -14,7 +15,7 @@ import java.util.List;
 /**
  * Created by afranco7 on 21/09/2016.
  */
-public class AgendarPages extends BasePage{
+public class AgendarPages {
 
     private static final By LIST_MENU_OPTIONS = By.cssSelector(".list-group-item");
     private static final By NAME_DOCTOR = By.cssSelector("input#name.form-control");
@@ -29,10 +30,17 @@ public class AgendarPages extends BasePage{
     private static final By DATE_INPUT_FIELD = By.cssSelector("input#datepicker.form-control.hasDatepicker");
     private static final By OBSERVACIONES_INPUT = By.cssSelector("textarea.form-control");
     private static int CEDULA=0;
+    public WebDriver driver;
 
 
     public void goToMainPage(String url){
         driver = new FirefoxDriver();
+        driver.get(url);
+    }
+
+    public void goToMainPageInChrome(String url){
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\afranco7\\Documents\\chromedriver.exe");
+        driver = new ChromeDriver();
         driver.get(url);
     }
 

@@ -2,28 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24d0348a-56d9-4187-b64d-edead941e6e2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/model/BasePage.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/agendar-citas-1.0-SNAPSHOT.jar" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/model/BasePage.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/model/AgendarPages.class" afterPath="$PROJECT_DIR$/target/test-classes/model/AgendarPages.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/steps/AgendarCitas.class" afterPath="$PROJECT_DIR$/target/test-classes/steps/AgendarCitas.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/model/AgendarPages.java" afterPath="$PROJECT_DIR$/src/test/java/model/AgendarPages.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java" afterPath="$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/stories/AgendarCitas.story" afterPath="$PROJECT_DIR$/src/test/resources/stories/AgendarCitas.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/AfterStories.stats" afterPath="$PROJECT_DIR$/target/jbehave-report/AfterStories.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/BeforeStories.stats" afterPath="$PROJECT_DIR$/target/jbehave-report/BeforeStories.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/stories.AgendarCitas.html" afterPath="$PROJECT_DIR$/target/jbehave-report/stories.AgendarCitas.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/stories.AgendarCitas.stats" afterPath="$PROJECT_DIR$/target/jbehave-report/stories.AgendarCitas.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/storyDurations.props" afterPath="$PROJECT_DIR$/target/jbehave-report/storyDurations.props" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/AfterStories.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/BeforeStories.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/reports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/stories.AgendarCitas.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/stories.AgendarCitas.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-report/view/stories.AgendarCitas.stats.html" afterPath="$PROJECT_DIR$/target/jbehave-report/view/stories.AgendarCitas.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/RunnerTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/RunnerTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunnerTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunnerTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stories/AgendarCitas.story" afterPath="$PROJECT_DIR$/target/test-classes/stories/AgendarCitas.story" />
     </list>
     <ignored path="agendarCitas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgendarPages.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AgendarPages.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/model/AgendarPages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+            <state relative-caret-position="624">
+              <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,21 +76,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgendarCitas.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AgendarCitas.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="62" column="46" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="46" />
+            <state relative-caret-position="-253">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#1706#1707#0" expanded="true" />
-                <element signature="e#1757#1758#0" expanded="true" />
-                <element signature="e#1862#1863#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1753#1754#0" expanded="true" />
+                <element signature="e#1803#1804#0" expanded="true" />
+                <element signature="e#1904#1905#0" expanded="true" />
+                <element signature="e#1955#1956#0" expanded="true" />
+                <element signature="e#2060#2061#0" expanded="true" />
+                <element signature="e#2113#2114#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,18 +99,18 @@
       <file leaf-file-name="AgendarCitas.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/stories/AgendarCitas.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="35" column="20" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="53" />
+            <state relative-caret-position="0">
+              <caret line="0" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/model/BasePage.java">
+      <file leaf-file-name="AgendarCitasChrome.story" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/stories/AgendarCitasChrome.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="300">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -146,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/test/java/model/PatientPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/DoctorPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/stories/AgendarCitas.story" />
+        <option value="$PROJECT_DIR$/src/test/resources/stories/AgendarCitasChrome.story" />
         <option value="$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/AgendarPages.java" />
       </list>
@@ -590,6 +590,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="24d0348a-56d9-4187-b64d-edead941e6e2" name="Default" comment="" />
@@ -679,14 +682,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1904#1905#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2113#2114#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,43 +738,51 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/model/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/stories/AgendarCitas.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/stories/AgendarCitasChrome.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="62" column="46" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/model/AgendarPages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+        <state relative-caret-position="624">
+          <caret line="41" column="106" selection-start-line="41" selection-start-column="106" selection-end-line="41" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/AgendarCitas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1904#1905#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2113#2114#0" expanded="true" />
           </folding>
         </state>
       </provider>

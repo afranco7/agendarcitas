@@ -17,6 +17,11 @@ public class AgendarCitas extends Steps{
         agendarPages.goToMainPage("http://automatizacion.herokuapp.com/afranco/");
     }
 
+    @Given("I am at the main page of the system in chrome")
+    public void goToMainPageInChrome(){
+        agendarPages.goToMainPageInChrome("http://automatizacion.herokuapp.com/afranco/");
+    }
+
 
     @When("I select the Agregar $DoctorPatient Option")
     public void selectAgregarDoctor(@Named("DoctorPatient") String doctor){

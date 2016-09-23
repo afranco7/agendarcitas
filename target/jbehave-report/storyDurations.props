@@ -1,6 +1,7 @@
 #org.jbehave.core.embedder.StoryManager
-#Thu Sep 22 16:25:46 COT 2016
+#Thu Sep 22 21:18:50 COT 2016
 threads=1
-total=43000
-threadAverage=43000
-stories/AgendarCitas.story=43000
+total=69000
+threadAverage=69000
+stories/AgendarCitasChrome.story=27000
+stories/AgendarCitas.story=42000
